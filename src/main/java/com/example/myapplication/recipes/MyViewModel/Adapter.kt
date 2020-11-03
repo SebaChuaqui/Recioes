@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import com.example.myapplication.recipes.room.Recetario
+import kotlinx.android.synthetic.main.fragment_second.view.*
 import kotlinx.android.synthetic.main.recipes.view.*
 
 

@@ -19,12 +19,12 @@ import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment(), PassRecipes {
 
-    lateinit var mProductsViewModel: ViewModelRecipes
+    lateinit var mRecipesViewModel: ViewModelRecipes
     lateinit var mAdapter: Adapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mProductsViewModel = ViewModelProvider(this).get(ViewModelRecipes::class.java)
+        mRecipesViewModel = ViewModelProvider(this).get(ViewModelRecipes::class.java)
         mAdapter = Adapter(this)
     }
 
@@ -44,13 +44,10 @@ class FirstFragment : Fragment(), PassRecipes {
         recyclerView.adapter = mAdapter
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        mProductsViewModel.mAllRecipes.observe(viewLifecycleOwner, Observer {
+        mRecipesViewModel.mAllRecipes.observe(viewLifecycleOwner, Observer {
             mAdapter.updateListRecipes(it)
         })
 
-        //view.findViewById<Button>(R.id.button_first).setOnClickListener {
-
-        // }
     }
 
     override fun passRecipes(mRecetario: Recetario) {
