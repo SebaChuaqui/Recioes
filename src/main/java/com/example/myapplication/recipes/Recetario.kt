@@ -1,4 +1,4 @@
-
+package com.example.myapplication.recipes
 import com.google.gson.annotations.SerializedName
 
 data class Recetario(
