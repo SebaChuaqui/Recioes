@@ -1,11 +1,9 @@
-package com.example.myapplication.recipes.room
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+package com.example.myapplication.recipes.retrofit.Pojo2
+
+
 import com.google.gson.annotations.SerializedName
 
-@Entity(tableName = "recipes_table")
 data class Recetario(
-    @PrimaryKey
     @SerializedName("id")
     val id: Int,
     @SerializedName("img")

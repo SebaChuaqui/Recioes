@@ -30,6 +30,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/ingredientes2"
+        android:layout_width="244dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="68dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/preparacion"
         android:layout_width="236dp"
         android:layout_height="90dp"

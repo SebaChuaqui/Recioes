@@ -20,6 +20,7 @@ class SecondFragment : Fragment() {
 
     var recipesId = 0
     var recipesIng = ""
+    var recipesIng2 = ""
     var recipesPre = ""
     var recipesRec = ""
 
@@ -31,6 +32,7 @@ class SecondFragment : Fragment() {
         arguments?.let {
             recipesId = it.getInt("id")
             recipesIng = it.getString("ingredientes").toString()
+            recipesIng2 = it.getString("ingredientes2").toString()
             recipesPre = it.getString("preparacion").toString()
             recipesRec = it.getString("recomendacion").toString()
 
@@ -49,6 +51,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         ingredientes.text = recipesIng
+        ingredientes2.text = recipesIng2
         preparacion.text = recipesPre
         recomendacion.text = recipesRec
 

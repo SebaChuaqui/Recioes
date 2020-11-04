@@ -56,6 +56,7 @@ class FirstFragment : Fragment(), PassRecipes {
         mBundle.putString("name", mRecetario.img)
         mBundle.putString("image", mRecetario.nombreReceta)
         mBundle.putString("ingredientes", mRecetario.ingredientes)
+        mBundle.putString("ingredientes2", mRecetario.ingredientes2)
         mBundle.putString("prepracion", mRecetario.preparacion)
         mBundle.putString("recomendacion", mRecetario.recomendacion)
 
