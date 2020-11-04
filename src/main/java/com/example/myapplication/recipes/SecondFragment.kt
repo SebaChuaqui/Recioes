@@ -30,9 +30,9 @@ class SecondFragment : Fragment() {
         mRecipesViewModel = ViewModelProvider(this).get(ViewModelRecipes::class.java)
         arguments?.let {
             recipesId = it.getInt("id")
-            recipesIng = it.getString("name").toString()
-            recipesPre = it.getString("name").toString()
-            recipesRec = it.getString("name").toString()
+            recipesIng = it.getString("ingredientes").toString()
+            recipesPre = it.getString("preparacion").toString()
+            recipesRec = it.getString("recomendacion").toString()
 
         }
     }

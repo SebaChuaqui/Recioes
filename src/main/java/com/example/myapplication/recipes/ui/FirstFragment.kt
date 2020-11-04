@@ -55,6 +55,11 @@ class FirstFragment : Fragment(), PassRecipes {
         val mBundle = Bundle()
         mBundle.putString("name", mRecetario.img)
         mBundle.putString("image", mRecetario.nombreReceta)
+        mBundle.putString("ingredientes", mRecetario.ingredientes)
+        mBundle.putString("prepracion", mRecetario.preparacion)
+        mBundle.putString("recomendacion", mRecetario.recomendacion)
+
+
         findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment, mBundle)
     }
 }
